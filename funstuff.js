@@ -1,7 +1,12 @@
+var scoreTracker = document.getElementById("firstValue");
+var score = 0;
+
 function addTheValue() {
-  console.log("this is generating");
-  //   firstValue.innerHTML = parseInt(fvalue.innerHTML) + parseInt(secondValue);
-  document.getElementById("firstValue").innerHTML = "Hello World";
+  score += 1;
+  scoreTracker.innerHTML = score;
 }
 
-// document.getElementById("secondValue").innerHTML =
+function loseTheValue() {
+  score -= 1;
+  scoreTracker.innerHTML = score;
+}
